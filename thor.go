@@ -1,12 +1,5 @@
 package main
 
-/*
- HULK DoS tool on <strike>steroids</strike> goroutines. Just ported from Python with some improvements.
- Original Python utility by Barry Shteiman http://www.sectorix.com/2012/05/17/hulk-web-server-dos-tool/
-
- This go program licensed under GPLv3.
- Copyright Alexander I.Grafov <grafov@gmail.com>
-*/
 
 import (
 	"flag"
@@ -149,7 +142,7 @@ func main() {
 			case targetComplete:
 				sent++
 				fmt.Printf("\r%-6d of max %-6d |\t%7d |\t%6d", cur, maxproc, sent, err)
-				fmt.Println("\r-- HULK Attack Finished --       \n\n\r")
+				fmt.Println("\r--THOR Attack Finished --       \n\n\r")
 				os.Exit(0)
 			}
 		}
